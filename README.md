@@ -1,4 +1,4 @@
-# node-js-sample
+# A simple node.js program created for Coursera Stanford Startup Engineering Class
 
 A barebones Node.js app using [Express 4](http://expressjs.com/).
 
@@ -7,8 +7,8 @@ A barebones Node.js app using [Express 4](http://expressjs.com/).
 Make sure you have [Node.js](http://nodejs.org/) and the [Heroku Toolbelt](https://toolbelt.heroku.com/) installed.
 
 ```sh
-git clone git@github.com:heroku/node-js-sample.git # or clone your own fork
-cd node-js-sample
+git clone git@github.com:borowe/bitstarter
+cd bitstarter
 npm install
 npm start
 ```
