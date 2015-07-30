@@ -102,6 +102,13 @@
         color: #ccccff:
       }
 
+      /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+      div.addthis_toolbox {
+      width:180px;
+      margin: 0 auto;
+      }
+
+
    </style>
 </head>
 <body>
@@ -182,11 +189,31 @@
 	<div class="span6 offset3 order">
 	  <!-- standard bootstrap button. -->
 	  <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-	  <button class="btn btn-success btn large">Preorder</button>
+<!--	  <button class="btn btn-success btn large">Preorder</button>  -->
+          <form action="" method="POST">
+           <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="pk_test_9k1RfGdCipu5I1MAQB5BECvn"
+	    data-label="Preorder"
+            data-amount="2000"
+            data-name="DOTS!"
+            data-description="2 Dotss ($20.00)"
+            data-image="/128x128.png">
+          </script>
+         </form>
 	</div>
 	<div class="span8 offset2 social">
+
+
+          <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55b483ec70707854" async="async"></script>
+	  <!-- Go to www.addthis.com/dashboard to customize your tools -->
+          <div class="addthis_sharing_toolbox"></div>
+	  
+	  <!-- commented out as I used addthis.com to create new buttons, see above -->
 	  <!-- social buttons are not included in default bootstrap -->
 	  <!-- see: http://noizwaves.github.io/bootstrap-social-buttons -->
+	  <!--
 	  <button class="btn btn-twitter">
 	    <i class="icon-twitter"></i>
 	    " | Twitter"
@@ -195,6 +222,9 @@
 	    <i class="icon-facebook"></i>
 	    " | Facebook"
 	  </button>
+	  -->
+
+
 	</div>
       </div>
     </div>
@@ -258,6 +288,5 @@
 	</div>
       </div>
     </div>
-
 </body>
 </html>
